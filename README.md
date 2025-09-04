@@ -19,9 +19,6 @@ The project uses **SQLite** for data storage and is structured into modules for 
 
 Clone the repository:
 
-- ```bash
-- git clone https://github.com/cenoff/moneybot.git
-- cd moneybot
 ```bash
 git clone https://github.com/cenoff/moneybot.git
 cd moneybot
