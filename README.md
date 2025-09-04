@@ -22,5 +22,6 @@ Clone the repository:
 ```bash
 git clone https://github.com/cenoff/moneybot.git
 cd moneybot
+```
 
 This project is licensed under the [MIT License](LICENSE).
