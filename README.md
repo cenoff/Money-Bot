@@ -151,4 +151,4 @@ Some features I'm planning to add when I have time:
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](LICENSE.md).
