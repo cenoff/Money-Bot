@@ -1,0 +1,19 @@
+# Telegram Bot Framework
+aiogram==3.22.0
+
+# Database
+aiosqlite==0.20.0
+
+# Data Processing
+pandas==2.2.0
+XlsxWriter==3.2.0
+
+# Visualization
+matplotlib==3.9.2
+numpy
+
+# Scheduler
+apscheduler
+
+# Environment Variables
+python-dotenv==1.0.1
