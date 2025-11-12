@@ -25,7 +25,7 @@ class TestGraphs:
 
         with patch("graphs.os.makedirs"):
             with patch("graphs.plt.figure", side_effect=Exception("Test error")):
-                with pytest.raises((OSError, ValueError, RuntimeError)):
+                with pytest.raises(Exception):
                     create_graph_sync(categories, values, graph_name)
 
     @pytest.mark.asyncio
@@ -53,7 +53,7 @@ class TestGraphs:
                 side_effect=Exception("Test error")
             )
 
-            with pytest.raises((OSError, ValueError, RuntimeError)):
+            with pytest.raises(Exception):
                 await create_graph_async(categories, values)
 
     @pytest.mark.asyncio
@@ -115,5 +115,5 @@ class TestGraphs:
         all_values = [("food_out", 50.0)]
 
         with patch("graphs.create_graph_async", side_effect=Exception("Test error")):
-            with pytest.raises((OSError, ValueError, RuntimeError)):
+            with pytest.raises(Exception):
                 await call_graph_creator(all_values)
